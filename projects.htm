@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleab Haileyesus</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: darkblue;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        ul {
+            padding-right: 40px;
+        }
+
+        h3 {
+            font-size: 30px;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .navbar {
+            background-color: #fff;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #333;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #fff;
+            background-color: #b5bbbd;
+            border-style: bold;
+        }
+
+        #cover-img h1 h3 {
+           color: #fff;
+        }
+
+        .project-lnk {
+            border-radius: 12px;
+            height: 400px;
+            width: 400px;
+            text-decoration: none;
+        }
+
+        .project-lnk h2:hover {
+            font-size: 33px;
+        }
+
+        .project-lnk img {
+            border-radius: 12px;
+            border-style: inset;
+            border-width: 0px;
+            height: 300px;
+            width: 300px;
+            opacity: 100%;
+        }
+
+        .project-lnk img:hover {
+            border-radius: 12px;
+            height: 303px;
+            width: 303px;
+            opacity: 65%;
+        }
+
+        #project-lnk {
+            background-color: #fff;
+            border-radius: 12px;
+            height: 450px;
+        }
+
+        #project-lnk-1 {
+            background-color: rgb(232, 245, 245);
+            border-width: 4px;
+            border-color: #fff;
+            border-right-style: inset;
+            border-radius: 12px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="home" class="container">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="index.htm#homes">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.htm#aboutme">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.htm">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container row">
+            <div class="col-md-6" style="background-color: rgb(232, 245, 245); padding-top: 100px; height: 300px;">
+                <h1>My projects</h1>
+            </div>
+            <div class="col-md-6" style="background-color: rgb(232, 245, 245); height: 300px;">
+                <img src="img/program.jpg" alt="Kaleab Profile" class="img-fluid" style="height: 300px; width: 100%;">
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 20px; padding-top: 20px;">
+            <div class="lead">
+                The <a href="https://github.com/kaleabhaileyesus/Vehicle-Management-System"><b>Vehicle Management System</b></a> is a web application designed to streamline the management
+                 of vehicle-related information. Developed using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>PHP</b>, this project
+                  serves as a comprehensive tool for administrators and users alike.
+            </div>
+        </div>
+
+        <div id="project-lnk" class="container row">
+            <div id="project-lnk-1" class="col-md-4 text-center">
+                <a class="project-lnk" href="https://github.com/kaleabhaileyesus/Vehicle-Management-System">
+                    <h2 title="Vechicle Management System">Vechicle Management System</h2><hr>
+                    <img class="img-fluid" src="img/vms.PNG" title="Vechicle Management System" alt="Vechicle Management System">
+                </a>
+            </div>
+            <div id="project-lnk-1" class="col-md-4">
+            </div>
+            <div id="project-lnk-1" class="col-md-4"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container text-center" class="bg-light" style="background-color: rgb(232, 245, 245);">
+                <a href="http://www.youtube.com"><img src="img/youtube.png" style="height: 50px; width: 50px;" id="youtube"></a>
+                <a href="http://www.facebook.com"><img src="img/facebook.png" style="height: 50px; width: 50px;" id="facebook"></a>
+                <a href="http://www.tweeter.com"><img src="img/tweeter.png" style="height: 50px; width: 50px;" id="tweeter"></a>
+                <div id="footp" class="mt-3"><b>© 2024 GC Kaleab Haileyesus</b></div>
+            </div>
+        </div>
+    </div>
+    <script>
+		const navbarToggler = document.querySelector(".navbar-toggler");
+		const navbarCollapse = document.querySelector(".navbar-collapse");
+
+			navbarToggler.addEventListener("click", function () {
+			navbarCollapse.classList.toggle("show");
+		});
+		</script>
+</body>
+</html>
